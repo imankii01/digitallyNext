@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { KeepAlive } from "@/components/KeepAlive";
 
 export const metadata: Metadata = {
   title: "TaskFlow - Smart Task Management for Productivity",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✓</text></svg>" />
       </head>
       <body className="bg-gradient-to-br from-indigo-50 via-white to-purple-50 text-gray-900 antialiased">
+        <KeepAlive />
         {children}
       </body>
     </html>
