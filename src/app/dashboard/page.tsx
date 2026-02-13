@@ -23,12 +23,6 @@ const statusColors = {
   'Done': 'badge-done',
 };
 
-const statusIcons = {
-  'Todo': Circle,
-  'In Progress': Zap,
-  'Done': CheckSquare,
-};
-
 export default function Dashboard() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [newTitle, setNewTitle] = useState('');
@@ -279,7 +273,6 @@ export default function Dashboard() {
           ) : (
             <div className="divide-y divide-gray-200/50">
               {tasks.map((task, index) => {
-                const Icon = statusIcons[task.status];
                 return (
                   <div
                     key={task.id}
