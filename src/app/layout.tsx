@@ -27,10 +27,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#3B82F6" />
+        <meta name="theme-color" content="#6366f1" />
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✓</text></svg>" />
       </head>
-      <body className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-100 antialiased">
+      <body className="bg-gradient-to-br from-indigo-50 via-white to-purple-50 text-gray-900 antialiased">
         {children}
       </body>
     </html>
